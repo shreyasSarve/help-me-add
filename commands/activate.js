@@ -1,5 +1,6 @@
 const vscode = require("vscode");
 const { TextEncoder } = require("util");
+const writeSettings = require("../controllers/write-settings");
 
 const checkForGitinit = async (
   /** @type {{ uri: vscode.Uri; }} */ currentWorkspaceFolder
@@ -15,7 +16,6 @@ const checkForGitinit = async (
 };
 const commandCallback = async function () {
   const currentWorkspaceFolder = vscode.workspace.workspaceFolders[0];
-  vscode.commands.executeCommand("setContext", "add.when.clicked", true);
   if (currentWorkspaceFolder == undefined) {
     vscode.window.showErrorMessage("Open folder in workspace first....");
   } else {
@@ -43,8 +43,12 @@ const commandCallback = async function () {
                     ".gitignore file created"
                   );
                 });
+                writeSettings();
               }
             });
+        else {
+          writeSettings();
+        }
       });
     }
   }
