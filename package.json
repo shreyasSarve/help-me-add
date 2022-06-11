@@ -13,7 +13,7 @@
 			"url": "https://github.com/shreyasSarve"
 		}
 	],
-	"icon": "./img/logo.png",
+	"icon": "logo.png",
 	"displayName": "gitignore",
 	"description": "Extension helps you to add files/folder to gitignore on single click",
 	"version": "1.0.1",
