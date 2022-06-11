@@ -1,8 +1,12 @@
 {
 	"name": "help-me-add",
+	"publisher": "evendead",
 	"displayName": "gitignore",
-	"description": "",
-	"version": "0.0.1",
+	"description": "Extension helps you to add files/folder to gitignore on single click",
+	"version": "1.0.1",
+	"repository": {
+		"url": "https://github.com/shreyasSarve/help-me-add"
+	},
 	"engines": {
 		"vscode": "^1.67.0"
 	},
@@ -17,30 +21,30 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "help-me-code.activate",
+				"command": "help-me-add.activate",
 				"title": "Activate gitignore"
 			},
 			{
-				"command": "open.when.clicked",
+				"command": "add.when.clicked",
 				"title": "Add to gitignore",
-				"enablement": "open.when.clicked"
+				"enablement": "add.when.clicked"
 			}
 		],
 		"menus": {
 			"explorer/context": [
 				{
-					"command": "open.when.clicked",
+					"command": "add.when.clicked",
 					"group": "2_workspace",
-					"when": "open.when.clicked"
+					 "when": "add.when.clicked"
 				}
 			],
 			"commandPalette": [
 				{
-					"command": "help-me-code.activate",
+					"command": "help-me-add.activate",
 					"when": "workspaceFolderCount > 0 "
 				},
 				{
-					"command": "open.when.clicked",
+					"command": "add.when.clicked",
 					"when": "false"
 				}
 			]
@@ -52,14 +56,14 @@
 		"test": "node ./test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.67.0",
 		"@types/glob": "^7.2.0",
 		"@types/mocha": "^9.1.1",
 		"@types/node": "16.x",
+		"@types/vscode": "^1.67.0",
+		"@vscode/test-electron": "^2.1.3",
 		"eslint": "^8.16.0",
 		"glob": "^8.0.3",
 		"mocha": "^10.0.0",
-		"typescript": "^4.7.2",
-		"@vscode/test-electron": "^2.1.3"
+		"typescript": "^4.7.2"
 	}
 }

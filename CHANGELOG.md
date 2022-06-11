@@ -1,9 +1,10 @@
 # Change Log
 
-All notable changes to the "help-me-code" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## Unreleased
 
-## [Unreleased]
+- v1.0.0
 
-- Initial release
+## Releases
+  
+ -  v1.0.1

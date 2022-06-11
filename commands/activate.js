@@ -15,7 +15,7 @@ const checkForGitinit = async (
 };
 const commandCallback = async function () {
   const currentWorkspaceFolder = vscode.workspace.workspaceFolders[0];
-  vscode.commands.executeCommand("setContext", "open.when.clicked", true);
+  vscode.commands.executeCommand("setContext", "add.when.clicked", true);
   if (currentWorkspaceFolder == undefined) {
     vscode.window.showErrorMessage("Open folder in workspace first....");
   } else {
@@ -51,6 +51,6 @@ const commandCallback = async function () {
 };
 
 module.exports = {
-  commandName: "help-me-code.activate",
+  commandName: "help-me-add.activate",
   commandCallback,
 };

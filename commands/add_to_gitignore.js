@@ -51,6 +51,6 @@ const commandCallback = async (/** @type {vscode.Uri} */ l) => {
   }
 };
 module.exports = {
-  commandName: "open.when.clicked",
+  commandName: "add.when.clicked",
   commandCallback,
 };
