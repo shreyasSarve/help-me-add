@@ -19,6 +19,7 @@ module.exports = {
 };
 const listenForChanges = () => {
   console.log("this ran for first time.....");
+  handleToggle();
   vscode.workspace.onDidChangeConfiguration(() => {
     handleToggle();
   });
