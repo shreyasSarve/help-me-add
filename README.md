@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shreyasSarve/help-me-add/blob/main/LICENCE.txt)
 ## gitignore extention for visual studio code
 <hr>
 extension for visual studio code to assist with  `.gitignore`  
